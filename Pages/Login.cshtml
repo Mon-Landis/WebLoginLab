@@ -1,0 +1,31 @@
+@page "/login"
+@model WebLoginLab.Pages.LoginModel
+
+<h1>登录</h1>
+
+<p>测试账户： Admin admin114514</p>
+
+<p>测试账户： USER1 user1919810</p>
+
+<form method="post">
+    <input type="hidden" asp-for="ReturnUrl" />
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="mb-3">
+        <label asp-for="Username">用户名</label>
+        <input asp-for="Username"
+               class="form-control"
+               autocomplete="username" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Password">密码</label>
+        <input asp-for="Password"
+               type="password"
+               class="form-control"
+               autocomplete="current-password" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">登录</button>
+</form>

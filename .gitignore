@@ -1,0 +1,37 @@
+# .NET build output
+**/bin/
+**/obj/
+artifacts/
+
+# Visual Studio / Rider local settings and caches
+.vs/
+.idea/
+*.user
+*.suo
+*.sln.docstates
+
+# Test results and coverage output
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Local configuration and secrets (keep shared appsettings files tracked)
+.env
+.env.*
+!.env.example
+appsettings.Local.json
+appsettings.*.Local.json
+*.pfx
+*.p12
+*.key
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+Desktop.ini

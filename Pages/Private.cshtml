@@ -1,0 +1,15 @@
+@page "/private"
+@model WebLoginLab.Pages.PrivateModel
+
+<h1>个人页面</h1>
+
+<p>当前用户：@User.Identity?.Name</p>
+<p>是否为管理员：@User.IsInRole("Admin")</p>
+
+<a href="/admin">访问管理员页面</a>
+
+<form method="post" asp-page-handler="Logout" class="mt-3">
+    <button type="submit" class="btn btn-secondary">
+        退出登录
+    </button>
+</form>
